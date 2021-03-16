@@ -1,0 +1,25 @@
+#using a dict
+# lambda functions for when a specific char reached
+math_work = {'+': (lambda a, b: a + b), '-': (lambda a, b: a - b), '*': (lambda a, b: a * b),'/': (lambda a, b: a / b)}
+
+#function that takes in a str BUT NEEDS SPACES BTWN CHARS
+def calc( input ):
+  expression = input.split()
+  #print(type(expression)) #expression is list type here
+  #print(expression) #list of chars within Str
+  my_list = []
+
+  for i in expression:
+    if(i in math_work):
+      arg2 = my_list.pop()
+      arg1 = my_list.pop()
+      result = math_work[i](arg1, arg2)
+      my_list.append(result)
+    else:
+      my_list.append(int(i))
+
+  #print('test: ', my_list)
+  return my_list.pop() #Need to use pop so that returned as int... NOT [#]
+
+
+print(calc("1 2 +"))
