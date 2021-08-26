@@ -1,5 +1,5 @@
 # ---python_play---
-I figured that I should update my GitHub(since I have not in a bit) to show off my recent Python skills that I gained during my last internship at Nerdwallet!
+I figured that I should update my GitHub to show off my recent Python skills that I gained during my time at Nerdwallet as a Security Software Engineer! Here, I explore the infamous "polish notation".
 
 
 # --- What is this Polish notation program?---
